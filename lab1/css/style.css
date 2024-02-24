@@ -243,6 +243,30 @@ img {
     border-radius: 5px;
 }
 
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+
+.dropdown p {
+    color: blue;
+}
+
+.dropdown-content p {
+    color: black;
+}
+
 /* ---------------------------------------- */
 
 table {
