@@ -24,14 +24,55 @@
                 </ul>
             
         </header>
-        
     <div>
-        <h3>Ми в соцмережах</h3>
-        <a href="https://www.instagram.com/_vovanto27_/"><img src="/images/inst.jpg" height="100" width="100"></a>
-        <a href="https://web.telegram.org/a/#5026616894"><img src="/images/teleg.png" height="90" width="90"></a>
-        <a href="https://www.facebook.com/profile.php?id=100056711450707"><img src="/images/face.png" height="90" width="90"></a>
-
-
+        <form action="#" method="post" class="survey-form">
+            <div class="form-group">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="age">Ваш вік:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="gender">Ваша стать:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                    <option value="other">Інша</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label for="feedback">Залиште ваш відгук:</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+            </div>
+        
+            <button type="submit">Надіслати</button>
+        </form>
     </div>
+
+
+        
+        <div class="subscribe-container">
+            <h4>Дізнавайтесь першими про оновлення на нашій сторінці</h4>
+            <form class="subscribe-form" action="your-server-endpoint" method="post">
+                <input type="email" id="email" name="email" placeholder="E-mail" required >
+                <input type="submit" value="Підписатися">
+            </form>
+        </div>
+        
+        
+        
+
+        <div class="social-links">
+            <h3>Ми в соцмережах</h3>
+            <a href="https://www.instagram.com/_vovanto27_/"><img src="/images/inst.jpg" height="100" width="100"></a>
+            <a href="https://web.telegram.org/a/#5026616894"><img src="/images/teleg.png" height="90" width="90"></a>
+            <a href="https://www.facebook.com/profile.php?id=100056711450707"><img src="/images/face.png" height="90" width="90"></a>
+        </div>
+        
 </body>
 </html>
