@@ -25,8 +25,23 @@ header {
     color: #ffcc00;
 }
 
+@media screen and (max-width: 750px) {
+    .main-menu ul {
+        color: green;
+    }
+    /* .main-menu {
+        flex-direction: column;
+        position: relative;
+    }
+
+    ul.main-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    } */
+}
+
 body {
-    font-family: 'Futura',sans-serif;
+    font-family: 'Futura', sans-serif;
     margin: 0;
     padding: 0 20px;
     background-color: white
@@ -66,19 +81,15 @@ h3 {
     color: #0066cc;
 }
 
-.content-container {
-    display: flex;
-    align-items: center;
-}
 
-.left-image {
+.left-image, .right-image {
     max-width: 40%; /* Змініть розмір фото за необхідності */
     height: auto;
     margin-right: 20px;
-    margin: 0 50px; /* Додайте відступ між фото і текстом */
+    margin: 25px 150px; /* Додайте відступ між фото і текстом */
 }
 
-.right-content {
+.right-content, .left-content {
     max-width: 400px;
     line-height: 1.5;
 }
@@ -102,13 +113,27 @@ img {
     margin-bottom: 30px;
 }
 
-.left-content {
-    max-width: 50%;
+
+
+table {
+    width: 90%;
+    height: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.right-image {
-    max-width: 45%;
-    height: auto;
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td a{
+    text-decoration: none;
 }
 
 
