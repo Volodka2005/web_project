@@ -1,6 +1,12 @@
 header {
     background-color: #333;
-    padding: 10px 0;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+   
 }
 
 .main-menu {
@@ -25,6 +31,40 @@ header {
     color: #ffcc00;
 }
 
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .main-menu {
+        display: none;
+        position: absolute;
+        top: 10px; 
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .main-menu li {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .main-menu a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        text-align: right;
+        color: white;
+        font-size: 15px;
+        margin-right: 15px;
+    }
+}
 
 /* ---------------------------------------- */
 .subscribe-container {
