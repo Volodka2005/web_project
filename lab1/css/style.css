@@ -255,6 +255,13 @@ button:hover {
     transform: scale(1.1); 
 }
 
+@media only screen and (max-width: 420px) {
+    .social-links img {
+        width: 60px; /* Задайте бажаний розмір іконок для менших екранів */
+        height: 60px;
+    }
+}
+
 /* ---------------------------------------- */
 
 
