@@ -7,89 +7,102 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-        <header>  
-            <ul class="main-menu">
-                    <li>
-                        <a href="index.html">Головна сторінка</a>
-                    </li>
-                    <li>
-                        <a href="lviv.html">Визначні місця Львова</a>
-                    </li>
-                    <li>
-                        <a href="ukraine.html">Подорож Україною</a>
-                    </li>
-                    <li>
-                        <a href="museum.html">Музеї світу</a>
-                    </li>    
-                </ul>
-                <div class="menu-icon" >&#9776;</div>  
-        </header>
+    <header>  
+        <ul class="main-menu">
+            <li>
+                <a href="index.html">Головна сторінка</a>
+            </li>
+            <li>
+                <a href="lviv.html">Визначні місця Львова</a>
+            </li>
+            <li>
+                <a href="ukraine.html">Подорож Україною</a>
+            </li>
+            <li>
+                <a href="museum.html">Музеї світу</a>
+            </li>    
+        </ul>
+        <div class="menu-icon">&#9776;</div>  
+    </header>
+
+    <div class="welcome">
+        <h1>Вітаємо на нашому сайті!</h1>
+        <p>Якщо ви вперше відвідуєте наш сайт, ми б хотіли дізнатися ваші вподобання, щодо статей на сайті. Були б дуже вдячними, якби 
+            ви пройшли невеличке опитування нижче.
+        </p>
+    </div>
+    
+       
     <div>
         <form action="#" method="post" class="survey-form">
             <div class="form-group">
                 <label for="name">Ваше ім'я:</label>
                 <input type="text" id="name" name="name" required>
             </div>
-        
+    
             <div class="form-group">
                 <label for="age">Ваш вік:</label>
                 <input type="number" id="age" name="age" required>
             </div>
-        
+    
             <div class="form-group">
                 <label for="gender">Ваша стать:</label>
                 <select id="gender" name="gender">
                     <option value="male">Чоловіча</option>
                     <option value="female">Жіноча</option>
-                    <option value="other">Інша</option>
+                    <option value="other">Інше</option>
                 </select>
             </div>
-        
-            <div class="form-group">
-                <label for="feedback">Залиште ваш відгук:</label>
-                <textarea id="feedback" name="feedback" rows="4"></textarea>
-            </div>
-        
+       
+            <div class="checkbox-group">
+                <label>Подорожі та музеї, які вас цікавлять:</label>
+                    <input type="checkbox" id="museums" name="interests" value="museums"><label for="museums">Музеї</label>
+                    <input type="checkbox" id="city-travel" name="interests" value="city-travel"><label for="city-travel">Подорожі містами</label>
+                    <input type="checkbox" id="country-travel" name="interests" value="country-travel"><label for="country-travel">Подорожі країнами</label>
+                    <input type="checkbox" id="architectural-sites" name="interests" value="architectural-sites"><label for="architectural-sites">Подорожі архітектурними пам'ятками</label>
+                    <input type="checkbox" id="parks" name="interests" value="parks"><label for="parks">Парки</label>
+            </div>     
+    
             <button type="submit">Надіслати</button>
+        </form>
+    </div> 
+
+        
+    <div class="subscribe-container">
+        <h4>Дізнавайтесь першими про оновлення на нашій сторінці</h4>
+        <form class="subscribe-form" action="your-server-endpoint" method="post">
+            <input type="email" id="email" name="email" placeholder="E-mail" required >
+            <input type="submit" value="Підписатися">
         </form>
     </div>
 
+    <div class="welcome-message">
+        <p>Дякую, що переглядаєте наш сайт. Якщо ви вже читаєте це повідомлення, дякуємо вам за це.
+            На даний момент ви маєте можливість переглядати наступні сторінки:</p>
+        <ul>
+            <ol>
+                <a href="/lviv.html">Визначні місця Львова</a>
+            </ol>
+            <ol>
+                <a href="/ukraine.html">Цікаві місця України</a>
+            </ol>
+            <ol>
+                <a href="/museum.html">Списки популярних музеїв світу</a>
+            </ol>
+        </ul>
+    </div>
+    
+        
+        
+        
 
-        
-        <div class="subscribe-container">
-            <h4>Дізнавайтесь першими про оновлення на нашій сторінці</h4>
-            <form class="subscribe-form" action="your-server-endpoint" method="post">
-                <input type="email" id="email" name="email" placeholder="E-mail" required >
-                <input type="submit" value="Підписатися">
-            </form>
-        </div>
-        
-        
-        
-
-        <div class="social-links">
-            <h3>Ми в соцмережах</h3>
-            <a href="https://www.instagram.com/_vovanto27_/"><img src="/images/inst.jpg" height="100" width="100"></a>
-            <a href="https://web.telegram.org/a/#5026616894"><img src="/images/teleg.png" height="90" width="90"></a>
-            <a href="https://www.facebook.com/profile.php?id=100056711450707"><img src="/images/face.png" height="90" width="90"></a>
-        </div>
+    <div class="social-links">
+        <h3>Ми в соцмережах</h3>
+        <a href="https://www.instagram.com/_vovanto27_/"><img src="/images/inst.jpg" height="100" width="100"></a>
+        <a href="https://web.telegram.org/a/#5026616894"><img src="/images/teleg.png" height="90" width="90"></a>
+        <a href="https://www.facebook.com/profile.php?id=100056711450707"><img src="/images/face.png" height="90" width="90"></a>
+    </div>
         
 </body>
-<!-- <script>document.addEventListener("DOMContentLoaded", function() {
-    // Отримати елементи
-    var menuIcon = document.querySelector('.menu-icon');
-    var mainMenu = document.querySelector('.main-menu');
-
-    // Додати слухач подій для натискання на іконку
-    menuIcon.addEventListener('click', function() {
-        // Переключення відображення/приховування випадаючого списку
-        if (mainMenu.style.display === 'none' || mainMenu.style.display === '') {
-            mainMenu.style.display = 'block';
-        } else {
-            mainMenu.style.display = 'none';
-        }
-    });
-});</script> -->
-
 <script src="/js/script.js"></script>
 </html>

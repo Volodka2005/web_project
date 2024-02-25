@@ -1,3 +1,15 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: antiquewhite
+    
+}
+
+/* ---------------------------------------- */
+/* ---------------- Header -----------------*/
+/* ---------------------------------------- */
+
 header {
     background-color: #333;
     padding: 8px 0;
@@ -67,6 +79,29 @@ header {
 }
 
 /* ---------------------------------------- */
+/* ------------- Main Page -----------------*/
+/* ---------------------------------------- */
+
+.welcome {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.welcome h1 {
+    color: #333;
+}
+
+.welcome p {
+    font-size: 18px;
+}
+
+/* ---------------------------------------- */
+
+
 .subscribe-container {
     text-align: center;
     margin-top: 20px; 
@@ -75,7 +110,7 @@ header {
 
 .subscribe-form {
     flex-direction: column;
-    max-width: 800px;
+    max-width: 400px;
     margin: 0 auto; /
 }
 
@@ -89,7 +124,6 @@ header {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 400px;
 }
 
 .subscribe-form input[type="submit"] {
@@ -107,9 +141,14 @@ header {
 }
 
 /* ---------------------------------------- */
+
 .survey-form {
     max-width: 400px;
     margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -119,13 +158,24 @@ header {
 label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
-input, select, textarea {
-    width: 100%;
+input,
+select {
+    width: auto;
     padding: 8px;
     box-sizing: border-box;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 380px;
 }
 
 button {
@@ -141,10 +191,49 @@ button:hover {
     background-color: #45a049;
 }
 
+@media (max-width: 500px) {
+    input, select {
+        width: 100%;
+    }
+
+    .checkbox-group label, input {
+        width: 100%;
+    }
+}
+
 
 
 /* ---------------------------------------- */
 
+
+.welcome-message {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.welcome-message ol {
+    margin-bottom: 10px;
+}
+
+.welcome-message a {
+    text-decoration: none;
+    color: #0366d6;
+}
+
+.welcome-message a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+
+.social-links {
+    text-align: center;
+}
 
 .social-links h3 {
     font-family: 'Arial', sans-serif;
@@ -168,28 +257,6 @@ button:hover {
 
 /* ---------------------------------------- */
 
-@media screen and (max-width: 750px) {
-    .main-menu ul {
-        color: green;
-    }
-    /* .main-menu {
-        flex-direction: column;
-        position: relative;
-    }
-
-    ul.main-menu li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    } */
-}
-
-body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0 20px;
-    background-color: antiquewhite
-    
-}
 
 h1 {
     font-size: 30px;
@@ -198,6 +265,8 @@ h1 {
     text-align: center;
 }
 
+/* ---------------------------------------- */
+/* ------------- Page Lviv -----------------*/
 /* ---------------------------------------- */
 
 .theme {
@@ -226,13 +295,10 @@ h3 {
     color: #0066cc;
 }
 
-/* ---------------------------------------- */
-
 .left-image, .right-image {
-    max-width: 40%; /* Змініть розмір фото за необхідності */
+    max-width: 60%; 
     height: auto;
-    margin-right: 20px;
-    margin: 25px 150px; /* Додайте відступ між фото і текстом */
+    margin: 25px 150px; 
 }
 
 .right-content, .left-content {
@@ -240,7 +306,15 @@ h3 {
     line-height: 1.5;
 }
 
-.right-content h3 {
+.left-content {
+    margin-left: 150px;
+}
+
+.right-content{
+    margin-right: 150px;
+}
+
+.right-content, .left-content h3 {
     text-align: center;
 }
 
@@ -255,11 +329,35 @@ img {
 .content-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+    .content-container {
+        flex-direction: column; 
+        text-align: center; 
+    }
 
+    .left-image, .right-image {
+        max-width: 100%; 
+        margin: 0;
+        order: -1; 
+    }
+
+    .right-content, .left-content {
+        max-width: 100%; 
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    .theme{
+        height: 40vh;
+    }
+}
+
+
+/* ---------------------------------------- */
+/* ------------- Page Ukraine --------------*/
 /* ---------------------------------------- */
 
 .tour-container {
@@ -308,6 +406,8 @@ img {
 }
 
 /* ---------------------------------------- */
+/* -------------- Page Museum --------------*/
+/* ---------------------------------------- */
 
 table {
     width: 90%;
@@ -335,4 +435,17 @@ td a:hover{
     color: rgb(4, 4, 108)
 }
 
+.info-table h1, p {
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    table {
+        width: 100%; 
+    }
+
+    th, td {
+        padding: 5px; 
+    }
+}
 
