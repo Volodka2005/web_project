@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>  
-        <ul class="main-menu">
+        <ol class="main-menu">
             <li>
                 <a href="index.html">Головна сторінка</a>
             </li>
@@ -21,7 +21,7 @@
             <li>
                 <a href="museum.html">Музеї світу</a>
             </li>    
-        </ul>
+        </ol>
         <div class="menu-icon">&#9776;</div>  
     </header>
 
@@ -30,41 +30,88 @@
         <p>Якщо ви вперше відвідуєте наш сайт, ми б хотіли дізнатися ваші вподобання, щодо статей на сайті. Були б дуже вдячними, якби 
             ви пройшли невеличке опитування нижче.
         </p>
-    </div>
-    
-       
+    </div> 
+
     <div>
         <form action="#" method="post" class="survey-form">
-            <div class="form-group">
-                <label for="name">Ваше ім'я:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-    
-            <div class="form-group">
-                <label for="age">Ваш вік:</label>
-                <input type="number" id="age" name="age" required>
-            </div>
-    
-            <div class="form-group">
-                <label for="gender">Ваша стать:</label>
-                <select id="gender" name="gender">
-                    <option value="male">Чоловіча</option>
-                    <option value="female">Жіноча</option>
-                    <option value="other">Інше</option>
-                </select>
-            </div>
-       
-            <div class="checkbox-group">
-                <label>Подорожі та музеї, які вас цікавлять:</label>
-                    <input type="checkbox" id="museums" name="interests" value="museums"><label for="museums">Музеї</label>
-                    <input type="checkbox" id="city-travel" name="interests" value="city-travel"><label for="city-travel">Подорожі містами</label>
-                    <input type="checkbox" id="country-travel" name="interests" value="country-travel"><label for="country-travel">Подорожі країнами</label>
-                    <input type="checkbox" id="architectural-sites" name="interests" value="architectural-sites"><label for="architectural-sites">Подорожі архітектурними пам'ятками</label>
-                    <input type="checkbox" id="parks" name="interests" value="parks"><label for="parks">Парки</label>
-            </div>     
-    
-            <button type="submit">Надіслати</button>
+            <fieldset>
+                <legend>Форма опитування</legend>
+                <div class="form-group">
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="age">Ваш вік:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="gender">Ваша стать:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Чоловіча</option>
+                        <option value="female">Жіноча</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Ваша електронна пошта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="phone">Ваш номер телефону:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="birthdate">Дата народження:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="favorite-color">Ваш улюблений колір:</label>
+                    <input type="color" id="favorite-color" name="favorite-color" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="food-preference">Ваша улюблена страва:</label>
+                    <input list="food-list" id="food-preference" name="food-preference" required>
+                    <datalist id="food-list">
+                        <option value="Піца">
+                        <option value="Суші">
+                        <option value="Стейк">
+                        <option value="Паста">
+                        <option value="Салат">
+                    </datalist>
+                </div>
+
+                <div class="checkbox-group">
+                    <label>Подорожі та музеї, які вас цікавлять:</label>
+                        <br><input type="checkbox" id="museums" name="interests" value="museums"><label for="museums">Музеї</label>
+                        <br><input type="checkbox" id="city-travel" name="interests" value="city-travel"><label for="city-travel">Подорожі містами</label>
+                        <br><input type="checkbox" id="country-travel" name="interests" value="country-travel"><label for="country-travel">Подорожі країнами</label>
+                        <br><input type="checkbox" id="architectural-sites" name="interests" value="architectural-sites"><label for="architectural-sites">Подорожі архітектурними пам'ятками</label>
+                        <br><input type="checkbox" id="parks" name="interests" value="parks"><label for="parks">Парки</label>
+                </div>     
+            
+                <div class="form-group">
+                    <label for="feedback">Ваш відгук:</label>
+                    <textarea id="feedback" name="feedback" rows="4"></textarea>
+                </div>
+            
+                <div class="checkbox-group">
+                    <label for="agree">Згодні з умовами?</label>
+                    <br><input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я погоджуюся з умовами</label>
+                </div>
+            
+                <button type="submit">Надіслати</button>
+            </fieldset>
         </form>
+
+        
     </div> 
 
         

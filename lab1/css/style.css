@@ -143,7 +143,7 @@ header {
 /* ---------------------------------------- */
 
 .survey-form {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f4f4f4;
@@ -154,6 +154,19 @@ header {
 .form-group {
     margin-bottom: 15px;
 }
+
+.checkbox-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
 
 label {
     display: block;
@@ -257,7 +270,7 @@ button:hover {
 
 @media only screen and (max-width: 420px) {
     .social-links img {
-        width: 60px; /* Задайте бажаний розмір іконок для менших екранів */
+        width: 60px; 
         height: 60px;
     }
 }
@@ -446,7 +459,7 @@ td a:hover{
     text-align: center;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     table {
         width: 100%; 
     }
