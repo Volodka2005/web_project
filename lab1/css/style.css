@@ -318,6 +318,25 @@ button:hover {
 
 /* ---------------------------------------- */
 
+.test-info {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.test-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.test-info p {
+    margin: 0;
+}
+
+/* ---------------------------------------- */
+
 .social-links {
     text-align: center;
 }
@@ -542,4 +561,8 @@ td a:hover{
         padding: 5px; 
     }
 }
+
+/* ---------------------------------------- */
+/* -------------- Page Test --------------*/
+/* ---------------------------------------- */
 

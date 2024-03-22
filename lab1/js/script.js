@@ -128,3 +128,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     colorInput.parentNode.insertBefore(colorDisplay, colorInput.nextSibling);
 });
+
+
+

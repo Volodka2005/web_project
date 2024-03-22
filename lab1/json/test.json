@@ -1,0 +1,111 @@
+{
+    "testName": "Тест по WEB дизайну",
+    "questions": [
+      {
+        "question": "Як правильно підключити зовнішній CSS файл до HTML документу?",
+        "answers": [
+          {
+            "answer": "<link rel='stylesheet' href='styles.css'>",
+            "isCorrect": true
+          },
+          {
+            "answer": "<style src='styles.css'></style>",
+            "isCorrect": false
+          },
+          {
+            "answer": "<css href='styles.css'></css>",
+            "isCorrect": false
+          },
+          {
+            "answer": "<style link='styles.css'></style>",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Яка з цих властивостей CSS задає колір тексту?",
+        "answers": [
+          {
+            "answer": "text-color",
+            "isCorrect": false
+          },
+          {
+            "answer": "font-color",
+            "isCorrect": false
+          },
+          {
+            "answer": "color",
+            "isCorrect": true
+          },
+          {
+            "answer": "text-style",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Як створити відступи всередині блоку за допомогою CSS?",
+        "answers": [
+          {
+            "answer": "margin",
+            "isCorrect": true
+          },
+          {
+            "answer": "padding",
+            "isCorrect": false
+          },
+          {
+            "answer": "spacing",
+            "isCorrect": false
+          },
+          {
+            "answer": "indent",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Як правильно задати ширину блока в CSS?",
+        "answers": [
+          {
+            "answer": "width: 100%",
+            "isCorrect": true
+          },
+          {
+            "answer": "width: full",
+            "isCorrect": false
+          },
+          {
+            "answer": "width: auto",
+            "isCorrect": false
+          },
+          {
+            "answer": "width: fit-content",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Вкажіть тег для гіперпосилання?",
+        "answers": [
+          {
+            "answer": "a",
+            "isCorrect": true
+          },
+          {
+            "answer": "div",
+            "isCorrect": false
+          },
+          {
+            "answer": "span",
+            "isCorrect": false
+          },
+          {
+            "answer": "p",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+  
