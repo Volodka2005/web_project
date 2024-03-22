@@ -114,6 +114,40 @@
         
     </div> 
 
+    <div id="filter-container">
+        <h2>Фільтри</h2>
+        <label for="gender-filter">Фільтр за статтю:</label>
+        <select id="gender-filter">
+            <option value="all">Усі</option>
+            <option value="male">Чоловіки</option>
+            <option value="female">Жінки</option>
+            <option value="other">Інше</option>
+        </select>
+        <br>
+        <label for="min-age-filter">Мінімальний вік:</label>
+        <input type="number" id="min-age-filter" placeholder="Мінімальний вік">
+        <label for="max-age-filter">Максимальний вік:</label>
+        <input type="number" id="max-age-filter" placeholder="Максимальний вік">
+        <br>
+        <label for="interests-filter">Фільтр за інтересами:</label>
+        <select id="interests-filter">
+            <option value="all">Усі</option>
+            <option value="museums">Музеї</option>
+            <option value="city-travel">Подорожі містами</option>
+            <option value="country-travel">Подорожі країнами</option>
+            <option value="architectural-sites">Подорожі архітектурними пам'ятками</option>
+            <option value="parks">Парки</option>
+        </select>
+        <br>
+        
+        <button id="apply-filters-btn" type="button">Застосувати фільтри</button>
+    </div>
+
+    <div id="results-container">
+        <h2>Результати фільтрації</h2>
+        <ul id="survey-results"></ul>
+    </div>
+
         
     <div class="subscribe-container">
         <h4>Дізнавайтесь першими про оновлення на нашій сторінці</h4>
