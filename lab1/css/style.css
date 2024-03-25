@@ -105,13 +105,16 @@ header {
 .subscribe-container {
     text-align: center;
     margin-top: 20px; 
-    background-color: rgb(249, 250, 251);
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .subscribe-form {
     flex-direction: column;
     max-width: 400px;
-    margin: 0 auto; /
+    margin: 0 auto; 
+    
 }
 
 .subscribe-container h4 {
@@ -255,7 +258,7 @@ button:hover {
 
 #filter-container {
     max-width: 500px;
-    margin: 5px auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 8px;
@@ -319,7 +322,7 @@ button:hover {
 /* ---------------------------------------- */
 
 .test-info {
-    margin-bottom: 20px;
+    margin: 20px auto;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -565,4 +568,5 @@ td a:hover{
 /* ---------------------------------------- */
 /* -------------- Page Test --------------*/
 /* ---------------------------------------- */
+
 
