@@ -20,6 +20,10 @@
         canvas {
             border:1px solid #d3d3d3;
             background-color: #f1f1f1;
+        .game-rule {
+                text-align: center;
+                margin-top: 20px; 
+            }
         }
     </style>
 </head>
@@ -44,7 +48,7 @@
 
 
     <div id="game-container">
-        <div style="text-align:center;width:480px;">
+        <div style="text-align:center;width:350px;">
           <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
           <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
           <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
@@ -52,7 +56,18 @@
           <button onclick="restartGame()">Restart</button>
         </div>
     </div>
-
-<script src="/js/gameScript.js"></script>
+    <div class="game-rule">
+        <div class="dropdown">
+            <p>Правила гри</p>
+                <div class="dropdown-content">
+                    <h2>Правила гри</h2>
+                    <p>Ваша мета - уникати зіткнень з зеленими об'єктами та збирати бали, які з'являються на полі гри.</p>
+                    <p>Кожен раз, коли ви зіткнетесь з жовтим об'єктом, ви отримаєте додаткові бали.</p>
+                    <p>Зіткнення з синім об'єктом призведе до втрати балів.</p>
+                    <p>Використовуйте кнопки для переміщення вгору, вниз, вліво та вправо. Намагайтеся набрати якомога більше балів до того, як ви зіткнетесь з зеленим об'єктом!</p>
+                </div>
+        </div>
+    </div>
 </body>
+<script src="/js/gameScript.js"></script>
 </html>
