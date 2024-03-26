@@ -1,4 +1,4 @@
-var myGamePiece;
+        var myGamePiece;
         var myObstacles = [];
         var myScore;
         var scores = JSON.parse(localStorage.getItem('scores')) || [];
@@ -88,17 +88,17 @@ var myGamePiece;
             for (i = 0; i < myObstacles.length; i += 1) {
                 if (myGamePiece.crashWith(myObstacles[i])) {
                     if (myObstacles[i].color === "yellow") {
-                        myGameArea.frameNo += 50; // Додаємо 50 балів за зіткнення з жовтим
+                        myGameArea.frameNo += 50; 
                     } else if (myObstacles[i].color === "blue") {
-                        myGameArea.frameNo -= 50; // Віднімаємо 50 балів за зіткнення з синім
+                        myGameArea.frameNo -= 50; 
                     } else if (myObstacles[i].color === "green") {
-                        myGameArea.stop(); // Зупиняємо гру при зіткненні з зеленим елементом
-                        updateScores(); // Оновлюємо результати гри при завершенні
+                        myGameArea.stop(); 
+                        updateScores(); 
                         showResults();
                         return;
                     }
                     myObstacles.splice(i, 1);
-                    break; // Зупиняємо цикл, коли знайдено перше зіткнення
+                    break; 
                 } 
             }
             myGameArea.clear();
