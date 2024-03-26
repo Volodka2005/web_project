@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #game-container {
+            text-align: center;
+        }
+        canvas {
+            border:1px solid #d3d3d3;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body onload="startGame()">
+    <header>  
+        <ol class="main-menu">
+            <li>
+                <a href="index.html">Головна сторінка</a>
+            </li>
+            <li>
+                <a href="lviv.html">Визначні місця Львова</a>
+            </li>
+            <li>
+                <a href="ukraine.html">Подорож Україною</a>
+            </li>
+            <li>
+                <a href="museum.html">Музеї світу</a>
+            </li>    
+        </ol>
+        <div class="menu-icon">&#9776;</div>  
+    </header>
+
+
+    <div id="game-container">
+        <div style="text-align:center;width:480px;">
+          <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+          <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+          <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+          <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button><br><br>
+          
+        </div>
+    </div>
+
+<script src="/js/gameScript.js"></script>
+</body>
+</html>
